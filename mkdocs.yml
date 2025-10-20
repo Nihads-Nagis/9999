@@ -2,3 +2,7 @@ site_name: Quads
 docs_dir: docs
 theme:
   name: material
+  pallette:
+    scheme: dracula
+    primary: deep purple
+    accent: deep purple
