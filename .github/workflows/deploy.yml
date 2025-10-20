@@ -21,7 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material pymdown-extensions
+          pip install mkdocs mkdocs-material pymdown-extensions mkdocs-include-markdown-plugin mkdocs-pymdownx-material-extras
+
 
       - name: Deploy to GitHub Pages
         env:
