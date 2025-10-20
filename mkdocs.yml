@@ -23,7 +23,7 @@ theme:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
+      primary: pink
       accent: deep purple
       toggle:
         icon: material/weather-sunny
@@ -35,7 +35,7 @@ theme:
 extra:
   alternate:
     - name: English
-      link: /9999/
+      link: /9999/en
       lang: en
     - name: 中文
       link: /9999/zh/
@@ -69,4 +69,4 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: index.md
+  - Home: en/index.md
