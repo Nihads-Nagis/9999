@@ -1,24 +1,50 @@
 site_name: "QUADS"
 site_author: Nihad Nagi
-site_url: https://nihads-nagis.github.io/9999/
 site_description: Description
+site_url: https://nihads-nagis.github.io/9999/
 docs_dir: docs
+
 theme:
   name: material
-  palette:
-    scheme: dracula
-    primary: deep purple
-    accent: deep purple
+  language: en
   features:
     - navigation.instant
     - navigation.sections
     - navigation.top
     - toc.follow
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
 plugins:
   - search
-  - mkdocs_pymdownx_material_extras
   - include-markdown:
       comments: true
+  - i18n:
+      default_language: en
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: zh
+          name: 中文
+          build: true
+      nav_translations:
+        zh:
+          Home: 主页
+          Guide: 指南
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -29,6 +55,7 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+
 nav:
   - Home: index.md
   - Guide: guide.md
