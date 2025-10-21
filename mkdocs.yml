@@ -12,26 +12,25 @@ theme:
     - navigation.sections
     # - navigation.top
     - toc.follow
-    - navigation.tabs
-    - toc.integrate
+    # - navigation.tabs
+    # - toc.integrate
     - navigation.footer
   palette:
-    - scheme: default
-      primary: blue
-      accent: deep purple
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
     - scheme: slate
-      primary: pink
-      accent: deep purple
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+      # primary: deep purple
+      primary: deep purple
+      accent: pink
+      # toggle:
+        # icon: material/weather-sunny
+        # name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-
+  icon:
+    admonition:
+      theory: material/atom
+      concept: material/lightbulb-outline
+      timeline: material/timeline
 extra:
   alternate:
     - name: English
@@ -58,8 +57,11 @@ plugins:
 
 markdown_extensions:
   - admonition
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -70,3 +72,10 @@ markdown_extensions:
 
 nav:
   - Home: en/index.md
+
+extra_css:
+  - styles/always-show-toc.css
+  # - styles/main.css
+  - styles/cards.css
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

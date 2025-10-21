@@ -1,0 +1,48 @@
+:root {
+  /* Catppuccin Macchiato palette */
+  --ctp-lavender: #c6a0f6;
+  --ctp-sky: #91d7e3;
+  --ctp-peach: #f5a97f;
+}
+
+/* Generic structure */
+.md-typeset .admonition.theory,
+.md-typeset details.theory {
+  border-color: var(--ctp-lavender);
+}
+.md-typeset .admonition.theory > .admonition-title,
+.md-typeset details.theory > summary {
+  background-color: color-mix(in srgb, var(--ctp-lavender) 15%, transparent);
+  color: var(--ctp-lavender);
+}
+.md-typeset .admonition.theory .admonition-title .admonition-icon svg {
+  color: var(--ctp-lavender);
+}
+
+/* Concept block */
+.md-typeset .admonition.concept,
+.md-typeset details.concept {
+  border-color: var(--ctp-sky);
+}
+.md-typeset .admonition.concept > .admonition-title,
+.md-typeset details.concept > summary {
+  background-color: color-mix(in srgb, var(--ctp-sky) 15%, transparent);
+  color: var(--ctp-sky);
+}
+.md-typeset .admonition.concept .admonition-title .admonition-icon svg {
+  color: var(--ctp-sky);
+}
+
+/* Timeline block */
+.md-typeset .admonition.timeline,
+.md-typeset details.timeline {
+  border-color: var(--ctp-peach);
+}
+.md-typeset .admonition.timeline > .admonition-title,
+.md-typeset details.timeline > summary {
+  background-color: color-mix(in srgb, var(--ctp-peach) 15%, transparent);
+  color: var(--ctp-peach);
+}
+.md-typeset .admonition.timeline .admonition-title .admonition-icon svg {
+  color: var(--ctp-peach);
+}

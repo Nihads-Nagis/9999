@@ -1,0 +1,39 @@
+/* Base custom admonition style */
+:root {
+  --md-admonition-theory-color: #c6a0f6;   /* lavender */
+  --md-admonition-concept-color: #8bd5ca;  /* teal */
+  --md-admonition-timeline-color: #f5a97f; /* peach */
+}
+
+/* THEORY */
+.md-typeset .admonition.theory,
+.md-typeset details.theory {
+  border-color: var(--md-admonition-theory-color);
+}
+.md-typeset .admonition.theory > .admonition-title,
+.md-typeset details.theory > summary {
+  background-color: color-mix(in srgb, var(--md-admonition-theory-color) 15%, transparent);
+  color: var(--md-admonition-theory-color);
+}
+
+/* CONCEPT */
+.md-typeset .admonition.concept,
+.md-typeset details.concept {
+  border-color: var(--md-admonition-concept-color);
+}
+.md-typeset .admonition.concept > .admonition-title,
+.md-typeset details.concept > summary {
+  background-color: color-mix(in srgb, var(--md-admonition-concept-color) 15%, transparent);
+  color: var(--md-admonition-concept-color);
+}
+
+/* TIMELINE */
+.md-typeset .admonition.timeline,
+.md-typeset details.timeline {
+  border-color: var(--md-admonition-timeline-color);
+}
+.md-typeset .admonition.timeline > .admonition-title,
+.md-typeset details.timeline > summary {
+  background-color: color-mix(in srgb, var(--md-admonition-timeline-color) 15%, transparent);
+  color: var(--md-admonition-timeline-color);
+}
