@@ -39,8 +39,6 @@ extra:
     - name: 中文
       link: /9999/zh/
       lang: zh
-
-
 plugins:
   # - search
   - include-markdown:
@@ -68,7 +66,7 @@ markdown_extensions:
   - fenced_code
   - toc:
       permalink: true
-      toc_depth: 3
+      toc_depth: 4
 
 nav:
   - Home: en/index.md
@@ -79,3 +77,5 @@ extra_css:
   - styles/cards.css
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+watch:
+  - docs/en

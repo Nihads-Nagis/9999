@@ -28,3 +28,6 @@ A: Method = ROP patching at assembly flow level, without adding or deleting code
 A: Assembly rewiring of drivers, lessons learned from mirroring the nvidia windows driver as an assembly circuits flow and just by changing flows and then play jumps, is the gold standard.
 
 A: Game Cheat Engine,it was used to examine stack and behavior, not sure of the name, but it was our simlulator before patching.
+
+This shift mirrors faith: the “laws” of light are not man’s inventions but rules traced back to a Creator. Ibn al-Haytham saw this truth when he modeled light, not for graphics but for understanding creation itself. Arthur Appel merely approximated this, unaware of the true origin.
+
