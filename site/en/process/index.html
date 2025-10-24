@@ -12,22 +12,24 @@
         <meta name="author" content="Nihad Nagi">
       
       
+        <link rel="canonical" href="https://nihads-nagis.github.io/9999/en/process/">
       
       
       
-      <link rel="icon" href="/9999/assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>QUADS</title>
+        <title>Process - QUADS</title>
       
     
     
-      <link rel="stylesheet" href="/9999/assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="/9999/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -66,11 +68,11 @@
       
     
     
-      <link rel="stylesheet" href="/9999/assets/stylesheets/always-show-toc.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/always-show-toc.css">
     
-      <link rel="stylesheet" href="/9999/assets/stylesheets/cards.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/cards.css">
     
-    <script>__md_scope=new URL("/9999/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -107,7 +109,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/9999/." title="QUADS" class="md-header__button md-logo" aria-label="QUADS" data-md-component="logo">
+    <a href="../.." title="QUADS" class="md-header__button md-logo" aria-label="QUADS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Process
             
           </span>
         </div>
@@ -203,7 +205,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/9999/." title="QUADS" class="md-nav__button md-logo" aria-label="QUADS" data-md-component="logo">
+    <a href="../.." title="QUADS" class="md-nav__button md-logo" aria-label="QUADS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -221,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/9999/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -264,8 +266,90 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+  <h1>Process</h1>
+
+<p>┌────────────────────────────────────────────┐
+│              LEVEL 7: PLAYBACK PIPELINE    │
+│────────────────────────────────────────────│
+│ • Output Devices (Display, Speakers, VR, etc.)              │
+│ • Decoders (GPU/CPU/SoC)                                    │
+│ • Perceptual Rendering (Color mapping, HDR tone, 3D sound)  │
+│ → Where Dolby Vision / Atmos / HDR10+ are interpreted        │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│              LEVEL 6: CONTAINER LAYER      │
+│────────────────────────────────────────────│
+│ • Combines Video, Audio, Text, Metadata                     │
+│ • Examples: MP4, MKV, MOV, WEBM, AVI                        │
+│ • Holds codec streams + timing + Dolby metadata             │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│           LEVEL 5: ENCODED STREAMS         │
+│────────────────────────────────────────────│
+│  🎥 Video Stream: H.264, HEVC, AV1, ProRes  │
+│  🔊 Audio Stream: AAC, FLAC, AC3, TrueHD    │
+│  📝 Text Stream: SRT, TTML, WebVTT          │
+│ • Temporal compression, motion vectors, psychoacoustic models │
+│ • Dolby Vision / Atmos metadata embedded here                │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│          LEVEL 4: FRAME &amp; CHANNEL LAYER    │
+│────────────────────────────────────────────│
+│ 🎥 Frames: Image units per time (24–60 fps) │
+│ 🔊 Channels: Left, Right, Center, etc.      │
+│ 📝 Caption Lines: Time-coded text segments  │
+│ • Combines into synchronized A/V/T sequences │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│     LEVEL 3: PIXELS, SAMPLES, CHARACTERS   │
+│────────────────────────────────────────────│
+│ 🎥 Pixels: RGB, YUV values (8–64-bit)       │
+│ 🔊 Audio Samples: Amplitude per time slice   │
+│ 📝 Characters: Encoded symbols (UTF-8, etc.) │
+│ • Atomic building blocks of all media        │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│       LEVEL 2: BIT &amp; BYTE REPRESENTATION   │
+│────────────────────────────────────────────│
+│ • Binary 0/1 encoding of data              │
+│ • 8 bits = 1 byte, foundation for storage  │
+└────────────────────────────────────────────┘
+                    ▲
+                    │
+┌────────────────────────────────────────────┐
+│         LEVEL 1: PHYSICAL SIGNAL DOMAIN    │
+│────────────────────────────────────────────│
+│ • Electric, optical, or acoustic waveform  │
+│ • Analog domain (continuous states)        │
+│ • Converts to/from digital bits (ADC/DAC)  │
+└────────────────────────────────────────────┘</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -303,14 +387,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/9999/", "features": ["navigation.sections", "toc.follow", "navigation.footer"], "search": "/9999/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "toc.follow", "navigation.footer"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/9999/assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
       
-        <script src="/9999/assets/javascripts/init-mermaid.js"></script>
+        <script src="../../assets/javascripts/init-mermaid.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

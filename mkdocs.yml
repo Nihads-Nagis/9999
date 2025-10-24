@@ -55,27 +55,40 @@ plugins:
 
 markdown_extensions:
   - admonition
-  - pymdownx.arithmatex:
-      generic: true
+  - attr_list
+  - md_in_html
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.highlight
-  - pymdownx.tabbed:
-      alternate_style: true
   - tables
   - fenced_code
+  - pymdownx.extra
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
       toc_depth: 4
 
 nav:
-  - Home: en/index.md
+  - Home: index.md
 
 extra_css:
-  - styles/always-show-toc.css
+  - assets/stylesheets/always-show-toc.css
   # - styles/main.css
-  - styles/cards.css
+  - assets/stylesheets/cards.css
 extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  # - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+  - assets/javascripts/init-mermaid.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - assets/javascripts/go.js
+  # - assets/javascripts/gojs-filter.js
+  # - assets/javascripts/gojs-init.js
 watch:
-  - docs/en
+  - docs
