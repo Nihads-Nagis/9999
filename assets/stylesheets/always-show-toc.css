@@ -1,0 +1,36 @@
+/* Force persistent right sidebar (TOC) on all screen widths */
+@media (min-width: 600px) {
+  .md-sidebar--secondary {
+    display: block !important;
+    visibility: visible !important;
+    position: fixed !important;
+    top: var(--md-header-height, 64px);
+    right: 0;
+    width: 12rem;
+    height: calc(100vh - var(--md-header-height, 64px));
+    overflow-y: auto;
+    padding: 1rem;
+    background: var(--md-default-bg-color);
+    z-index: 1;
+  }
+
+  /* Push main content left to make room for sidebar */
+  .md-main__inner {
+    margin-right: 18rem;
+  }
+
+  /* Keep inner TOC layout clean */
+  .md-sidebar__inner {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+/* Optional: nice scrollbar */
+.md-sidebar--secondary::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.md-sidebar--secondary::-webkit-scrollbar-thumb {
+  background: var(--md-accent-fg-color);
+  border-radius: 0.2rem;
+}
